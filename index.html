@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Creative Resume</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+
+    /* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    background-color: #e4b9e3;
+}
+
+.navbar {
+    background-color: #e3cce2;
+    color: #4d103a;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it appears above other content */
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar h1 {
+    background-color: #e3cce2;
+    margin: 0;
+  }
+  
+  .navbar ul {
+    background-color: #e3cce2;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar ul li {
+    font-size: 25px;
+    background-color: #e3cce2;
+    margin-right: 60px;
+    
+  }
+  
+  .navbar ul li a {
+    background-color: #e3cce2;
+    color: #4f0811;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .navbar ul li a:hover {
+    color: #ffffff;
+  }
+  
+
+img{
+    border-radius: 50%;
+}
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.9;
+    background-color: #e1c4df;
+    padding: 40px;
+}
+
+.resume {
+    max-width: 1600px;
+    margin:40px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about{
+    max-width: 1000px;
+    margin:200px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 1000px rgba(0, 0, 0, 0.587);
+}
+
+.contact-info{
+    max-width: 1000px;
+    margin:200px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 1000px rgba(0, 0, 0, 0.587);
+}
+.skills{
+    max-width: 1000px;
+    margin:200px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 1000px rgba(0, 0, 0, 0.587);
+    
+}
+.education{
+    max-width: 1000px;
+    margin:100px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 1000px rgba(0, 0, 0, 0.587);
+}
+header {
+    text-align: right;
+    margin-bottom: 200px;
+}
+
+img{
+    float: left;
+    background-color: #ba94b9;
+}
+
+header h1 {
+    padding-top: 30px;
+    padding-right: 40px;
+    font-size: 3.5em;
+    color: #4d103a;
+}
+
+header p {
+    font-size: 2.0em;
+    color: #4d103a;
+    padding-right: 40px;
+    text-align: right;
+}
+
+
+section {
+    margin-bottom: 200px;
+}
+
+p{
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+h2 {
+    color: #4d103a;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
+    color:rgb(43, 4, 4);
+    text-align: center;
+}
+p{
+    color: rgb(43, 4, 4);
+    font-size: larger;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+    .resume {
+        padding: 10px;
+    }
+    header h1 {
+        font-size: 2em;
+    }
+    header p {
+        font-size: 1.2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+}
+
+</style>
+
+<body>
+    
+    <div class="navbar">
+        <h1>My Resume</h1>
+        <ul>
+            <li><a onclick="scrollInto('profile')">Profile</a></li>
+            <li><a onclick="scrollInto('about')">about</a></li>
+            <li><a onclick="scrollInto('contact')">contact</a></li>
+            <li><a onclick="scrollInto('skill')">skill</a></li>
+            <li><a onclick="scrollInto('Education')">Education</a></li>
+        </ul>
+        </div>
+
+
+    <div class="resume">
+        <section id="profile">
+        <img src="vini.jpg" height="250px" width="250px">
+        <header>
+            <h1>vini sutariya</h1>
+            <p>Web Developer</p>
+            
+        </header>
+    </section>
+
+        <section class="about" id="about">
+            <h2>About Me</h2>
+            <p>
+hello! I am vini sutariya.i am currently studying in 
+SDJ International college,i am doing BCA degree from veer
+Narmad South Gujarat University.
+I am a bright and receptive person, able to communicate well
+with people at all levels.I am a keen, hard working, reliable
+excellent time keeper I like to use my skills to make a positive 
+contribution to the workforce.
+            </p>
+
+
+        </section>
+
+        <section class="contact-info" id="contact">
+            <h2>Contact Information</h2>
+            <ul>
+                <li>Email: vinisutariya@gmail.com</li>
+                <li>Phone: +91 9974613229</li>
+                <li>LinkedIn: linkedin.com/in/vinisutariya</li>
+            </ul>
+        </section>
+        
+        <section class="skills" id="skill">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5 & CSS3</li>
+                <li>JavaScript</li>
+                <li>Responsive Design</li>
+                <li>c(programming language)</li>
+            </ul>
+        </section>
+        <section class="education" id="Education">
+            <h2>Education</h2>
+            <p>Bachelor of computer application</p>
+            <p>veer nurmad south gujarat univercity, 2022-2025</p>
+            <br/>
+            <p>school of secondary board</p>
+            <p>GRADE : 89.86%, 2021-2022</p>
+        </section>
+    </div>
+
+    <script>
+
+function scrollInto(id) {
+    var elmnt = document.getElementById(id);
+    elmnt.scrollIntoView({
+        behavior: "smooth", 
+        block: "center",
+        inline: "end",
+    });
+}
+
+    </script>
+</body>
+</html>
